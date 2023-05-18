@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
@@ -10,31 +11,15 @@ import logo5 from '../../public/logo/react-2.svg'
 import logo6 from '../../public/logo/next-js.svg'
 import logo7 from '../../public/logo/framer-motion.svg'
 import jsPDF from "jspdf"
-
-
-
-const Navbar = ()=> {
- return (
-  <>
-  <motion.div className="navbar bg-black">
-    <motion.div 
-    initial={{x: 1000, opacity: 0}}
-    animate={{x: 0, opacity: 1,
-    transition: {
-      duration: 3
-    }
-    }}  
-    className="navbar-start">
-      <p className="text-white text-3xl">CodeFreak.</p>
-    </motion.div>
-  </motion.div>
-  </>
- )
-}
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 
 
 
+
+
+
+// HERO SESION
 
 const Portofolio = ()=> {
 
@@ -86,7 +71,7 @@ return (
           <motion.div 
           variants={imageAnimated}
           >
-          <Image src={avatar}  alt='/' className='rounded-full' />
+          <Image width={500} height={0} src={avatar}  alt='/' className='rounded-full' />
           </motion.div>
           
           {/* Bagian kanan text */}
@@ -157,11 +142,8 @@ return (
 
 export default function Hero() {
 
-
-
   return (
-    <div>
-      <Navbar />
+    <div className="h-screen">
       <Portofolio />
     </div>
   )

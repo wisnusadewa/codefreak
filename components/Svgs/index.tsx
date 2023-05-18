@@ -1,0 +1,1 @@
+import { default as Webdev } from './Webdev.svg'
