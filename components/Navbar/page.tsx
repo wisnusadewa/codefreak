@@ -29,10 +29,10 @@ const Navbar = ()=> {
        }
        }}  
        >
-       <Link href='https://github.com/wisnusadewa'>
+       <Link href='https://www.linkedin.com/in/wisnu-sadewa-989b65161/'>
             <span className="flex text-white"><FaLinkedin size={25}/></span>
        </Link>
-       <Link href='https://www.linkedin.com/in/wisnu-sadewa-989b65161/'>
+       <Link href='https://github.com/wisnusadewa'>
             <span className="flex text-white ml-5"><FaGithub  size={25}/></span>
        </Link>
        <Link href='https://www.instagram.com/wisnusadew/'>
@@ -43,5 +43,5 @@ const Navbar = ()=> {
      </>
     )
    }
-
+   
    export default Navbar;
